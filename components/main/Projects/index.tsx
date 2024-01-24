@@ -3,7 +3,9 @@ import ProjectCard from '../../sub/ProjectCard';
 
 export default function index() {
     return (
-        <div className='flex flex-col items-center justify-center py-20 px-20'>
+        <div className='flex flex-col items-center justify-center py-20 px-20'
+            id="projects"
+        >
             <h1 className='text-[2.5rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20'>
                 Projects
             </h1>

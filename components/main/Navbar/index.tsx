@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Navlogo from '../../../public/NavLogo.png';
+import Navlogo1 from '../../../public/react-logo.png';
 import { Socials } from '@/constants';
 export default function Index() {
     return (
@@ -9,12 +10,12 @@ export default function Index() {
                 <a href='#about-me' className='w-auto h-auto flex items-center'>
                     <Image
                         alt='logo'
-                        src={Navlogo}
-                        width={70}
-                        height={70}
+                        src={Navlogo1}
+                        width={40}
+                        height={40}
                         className=' cursor-pointer hover:animate-slowspin'
                     />
-                    <span className='font-bold ml hidden md:block text-gray-300'>WebChain Dev</span>
+                    <span className='font-bold ml hidden md:block text-gray-300'>Portfolio</span>
                 </a>
                 <div className='w-[31.25rem] h-full flex items-center justify-between md:mr-20'>
                     <div className='w-full h-auto flex items-center justify-between border border-[#7042f861] bg-[#0300145e] mr-[0.938rem] px-[1.25rem] py-[0.625rem] rounded-full text-gray-200'>
