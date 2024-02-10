@@ -4,6 +4,8 @@ import Navlogo from '../../../public/NavLogo.png';
 import Navlogo1 from '../../../public/react-logo.png';
 import { Socials } from '@/constants';
 export default function Index() {
+
+
     return (
         <div className='w-full h-[4.063rem] fixed top-0 shadow-lg shadow-[#2A0E65]/50 bg-[#03001417] backdrop-blur-md z-50 px-[10px]'>
             <div className='w-full h-full flex justify-between items-center m-auto px-[10px]'>
@@ -28,13 +30,16 @@ export default function Index() {
                     {
                         Socials.map((social) => {
                             return (
-                                <Image
-                                    src={social.src}
-                                    alt={social.name}
-                                    key={social.name}
-                                    width={24}
-                                    height={24}
-                                />
+                                <a href={social.link} target="_blank" rel="noopener noreferrer" key={social.name}>
+                                    <Image
+                                        src={social.src}
+                                        alt={social.name}
+                                        key={social.name}
+                                        width={24}
+                                        height={24}
+                                        className=' cursor-pointer'
+                                    />
+                                </a>
                             )
                         })
                     }
