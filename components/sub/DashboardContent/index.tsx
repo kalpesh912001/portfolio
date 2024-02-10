@@ -16,25 +16,23 @@ export default function index() {
             <div className='h-full w-full flex flex-col gap-5 justify-center mx-auto text-start'>
                 <motion.div
                     variants={slideInFromTop}
-                    className='Welcome-box py-[0.9rem] px-[8px] border border-[#7042f88b] opacity-[0.9]'>
+                    className='Welcome-box py-[0.9rem] px-[8px] border border-[#7042f88b] opacity-[0.9] max-w-[12rem]'>
                     <SparklesIcon className='text-[#b49bff] mr-[0.625rem] h-5 w-5' />
                     <h1 className='Welcome-text text-[0.813rem]'>
-                        Fullstack Developer Portfolio
+                        Hello world
                     </h1>
                 </motion.div>
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[37.5rem] w-auto h-auto'>
-                    <span>Providing
-                        <span className='bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500'> the best </span>
-                        project experience
+                    className=' flex flex-col gap-3 mt-6 text-[2.8rem] font-bold text-white max-w-[37.5rem] w-auto h-auto'>
+                    <span>Hi, I Am Kalpesh</span>
+                    <span>A <span className='anim-typewriter bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500'>Fullstack Developer</span>
                     </span>
                 </motion.div>
                 <motion.div
                     variants={slideInFromLeft(0.8)}
-                    className='text-gray-400 text-lg my-5 max-w-[37.5rem]'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas natus
-                    facilis earum amet dolorum dolore. Perferendis, eveniet consectetur.
+                    className='text-gray-400 text-lg my-0 max-w-[37.5rem]'>
+                    Passionate about crafting seamless and efficient web development experiences with expertise in both frontend and backend technologies.
                 </motion.div>
                 <motion.a
                     variants={slideInFromLeft(1)}

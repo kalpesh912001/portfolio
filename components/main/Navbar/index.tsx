@@ -17,7 +17,7 @@ export default function Index() {
                     />
                     <span className='font-bold ml hidden md:block text-gray-300'>Portfolio</span>
                 </a>
-                <div className='w-[31.25rem] h-full flex items-center justify-between md:mr-20'>
+                <div className='w-[35.25rem] h-full flex items-center justify-between'>
                     <div className='w-full h-auto flex items-center justify-between border border-[#7042f861] bg-[#0300145e] mr-[0.938rem] px-[1.25rem] py-[0.625rem] rounded-full text-gray-200'>
                         <a href="#about-me" className="cursor-pointer">About me</a>
                         <a href="#skills" className="cursor-pointer">Skills</a>
