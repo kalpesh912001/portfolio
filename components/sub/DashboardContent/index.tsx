@@ -4,9 +4,15 @@ import { motion } from 'framer-motion';
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion';
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
-import mainIconsdark from '../../../public/mainIconsdark.svg'
+import mainIconsdark from '../../../public/mainIconsdark.svg';
+import redirectIcon from '../../../public/redirect-icon.png';
+
 
 export default function index() {
+
+    const openResume = () => {
+        window.open('/KalpeshPatilResume.pdf', '_blank')
+    }
     return (
         <motion.div
             initial='hidden'
@@ -35,9 +41,12 @@ export default function index() {
                     Passionate about crafting seamless and efficient web development experiences with expertise in both frontend and backend technologies.
                 </motion.div>
                 <motion.a
+                    onClick={openResume}
                     variants={slideInFromLeft(1)}
-                    className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[12.5rem]'>
-                    Learn More!
+                    className='flex justify-center items-center gap-2 py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[12.5rem]'>
+                    <span>Resume</span>
+                    <Image src={redirectIcon} alt='' width={16} height={16} />
+
                 </motion.a>
 
             </div>
