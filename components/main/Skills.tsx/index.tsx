@@ -1,5 +1,5 @@
 import React from 'react';
-import { Backend_skill, Frontend_skill, Full_stack, Other_skill, Skill_data } from '@/constants'
+import { Skillset1, Skillset2, Skillset3, Skillset4 } from '@/constants'
 import SkillProvider from '../../sub/SkillDataProvider';
 import SkillText from '@/components/sub/SkillText';
 
@@ -10,9 +10,9 @@ export default function index() {
             className='flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-[24rem] py-20'
             style={{ transform: "scale(0.9)" }}>
             <SkillText />
-            <div className='flex justify-around flex-wrap mt-4 gap-5 items-center'>
+            <div className='flex justify-around flex-wrap mt-4 gap-y-5 gap-x-8 items-center'>
                 {
-                    Frontend_skill.map((image, index) => {
+                    Skillset1.map((image, index) => {
                         return (
                             <SkillProvider
                                 key={index}
@@ -25,9 +25,9 @@ export default function index() {
                     })
                 }
             </div>
-            <div className='flex justify-around flex-wrap mt-4 gap-5 items-center'>
+            <div className='flex justify-around flex-wrap mt-4 gap-y-5 gap-x-8 items-center'>
                 {
-                    Backend_skill.map((image, index) => {
+                    Skillset2.map((image, index) => {
                         return (
                             <SkillProvider
                                 key={index}
@@ -40,9 +40,9 @@ export default function index() {
                     })
                 }
             </div>
-            <div className='flex justify-around flex-wrap mt-4 gap-5 items-center'>
+            <div className='flex justify-around flex-wrap mt-4 gap-y-5 gap-x-8 items-center'>
                 {
-                    Full_stack.map((image, index) => {
+                    Skillset3.map((image, index) => {
                         return (
                             <SkillProvider
                                 key={index}
@@ -55,9 +55,9 @@ export default function index() {
                     })
                 }
             </div>
-            <div className='flex justify-around flex-wrap mt-4 gap-5 items-center'>
+            <div className='flex justify-around flex-wrap mt-4 gap-y-5 gap-x-8 items-center'>
                 {
-                    Other_skill.map((image, index) => {
+                    Skillset4.map((image, index) => {
                         return (
                             <SkillProvider
                                 key={index}
