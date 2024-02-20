@@ -8,7 +8,7 @@ export default function Index() {
                 autoPlay
                 loop
                 muted
-                className='rotate-180 absolute top-[-22.76rem] sm:top-[-21rem] left-0 z-[1] w-full h-full object-cover'
+                className='rotate-180 absolute top-[-22.76rem] sm:top-[-20.3rem] left-0 z-[1] w-full h-full object-cover'
             >
                 <source src='/blackhole.webm' type='video/webm' />
             </video>

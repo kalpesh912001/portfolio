@@ -6,7 +6,8 @@ import { SparklesIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import mainIconsdark from '../../../public/mainIconsdark.svg';
 import redirectIcon from '../../../public/redirect-icon.png';
-
+import phoneIcon from '../../../public/phone.svg';
+import mail from '../../../public/mail.svg';
 
 export default function index() {
 
@@ -17,7 +18,7 @@ export default function index() {
         <motion.div
             initial='hidden'
             animate='visible'
-            className='flex flex-row items-center justify-center px-7 sm:px-20 mt-36 w-full z-[20]'
+            className='flex flex-row items-center justify-center px-7 sm:px-20 mt-28 w-full z-[20]'
         >
             <div className='h-full w-full flex flex-col gap-5 justify-center mx-auto text-start'>
                 <motion.div
@@ -49,7 +50,18 @@ export default function index() {
                     <Image src={redirectIcon} alt='' width={16} height={16} />
 
                 </motion.a>
-
+                <motion.div
+                    variants={slideInFromLeft(0.5)}
+                    className='flex items-center justify-start gap-4'>
+                    <div className='flex items-center gap-2'>
+                        <Image src={phoneIcon} alt='' width={18} height={18} />
+                        <span className='text-white'>+91 8857896324</span>
+                    </div>
+                    <div className='flex items-center gap-2'>
+                        <Image src={mail} alt='' width={18} height={18} />
+                        <span className='text-white'>kalpeshspatil2001@gmail.com</span>
+                    </div>
+                </motion.div>
             </div>
             <motion.div
                 variants={slideInFromRight(0.8)}
