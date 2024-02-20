@@ -58,8 +58,8 @@ background-clip: text;
 
 .gradient-text {
   background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #9500ff, #06B6D4);
+  color: #0968d5;
+  /* background-image: linear-gradient(to right, #9500ff, #06B6D4); */
   background-blend-mode: normal, screen;
 }
 
@@ -139,4 +139,9 @@ html {
   to {
     border-right-color: transparent;
   }
+}
+
+.zoom-animation :hover {
+  zoom: 1.2;
+  transition: 0.3s ease-in-out ;
 }
