@@ -1,19 +1,19 @@
-"use client"
+'use client'
 import React, { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic';
-import ReactApexChart from 'react-apexcharts';
-import reactIcon from '../../../public/react-logo.png';
 import Image from 'next/image';
-
+import { motion } from 'framer-motion';
+import { fadeInTop, slideInFromLeft, slideInFromTop } from '@/utils/motion';
 interface Props {
     percent: number;
     lable: string;
     image: string;
 }
 export default function SkillChart(props: Props) {
+    const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
     const { percent, lable, image } = props;
     const [skillData, setSkillData] = useState<any>({
-        series: [percent],
+        series: [percent || 0],
         options: {
             chart: {
                 height: 280,
@@ -29,7 +29,6 @@ export default function SkillChart(props: Props) {
                         name: {
                             show: false,
                             fontSize: '20px',
-                            fontFamily: undefined,
                             fontWeight: 600,
                             color: '#595cff',
                             offsetY: 0
@@ -37,7 +36,6 @@ export default function SkillChart(props: Props) {
                         value: {
                             show: true,
                             fontSize: '25px',
-                            fontFamily: undefined,
                             fontWeight: 400,
                             color: '#FFFFFF',
                             offsetY: 16,
@@ -70,12 +68,20 @@ export default function SkillChart(props: Props) {
     });
 
     return (
-        <div className='flex flex-col items-center justify-start gap-3 !px-[-10px] py-2 rounded-lg shadow-lg cursor-pointer backdrop-blur-14 bg-[#FFFFFF] bg-opacity-10 zoom-animation'>
-            <ReactApexChart options={skillData.options} series={skillData.series} type="radialBar" width={250} />
+        <motion.div
+            variants={slideInFromLeft(0.3)}
+            className='flex flex-col items-center justify-start gap-3 !px-[-10px] py-2 rounded-lg shadow-lg cursor-pointer backdrop-blur-14 bg-[#FFFFFF] bg-opacity-10 zoom-animation'>
+            <ReactApexChart
+                options={skillData.options as any || {}}
+                series={skillData.series || []}
+                type="radialBar"
+                width={250}
+                height={250}
+            />
             <div className='flex items-center justify-center gap-2 mb-4'>
                 <Image src={image} alt='' width={30} height={30} />
                 <span className='text-white text-[1.2rem]'>{lable}</span>
             </div>
-        </div>
+        </motion.div>
     )
 }
