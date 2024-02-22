@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import React from 'react';
-import diamondIcon from '../../../public/diamond1.svg';
 import ExperienceContent from '../../sub/ExperienceContent';
 
 export default function Index() {
