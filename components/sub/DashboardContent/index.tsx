@@ -18,9 +18,9 @@ export default function index() {
         <motion.div
             initial='hidden'
             animate='visible'
-            className='flex flex-row items-center justify-center px-7 sm:px-20 mt-32 w-full z-[20]'
+            className='flex mx-auto flex-row items-center justify-center px-6 sm:px-20 mt-[17rem] sm:mt-32 w-full z-[20]'
         >
-            <div className='h-full w-full flex flex-col gap-5 justify-center mx-auto text-start'>
+            <div className='h-full mx-auto w-full flex flex-col gap-5 justify-center text-start'>
                 {/* <motion.div
                     variants={slideInFromTop}
                     className='Welcome-
@@ -32,9 +32,9 @@ export default function index() {
                 </motion.div> */}
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className=' flex flex-col gap-3 mt-6 text-[2.8rem] font-bold text-white max-w-[37.5rem] w-auto h-auto'>
+                    className=' flex flex-col gap-3 mt-6 text-[2.5rem] font-bold text-white max-w-[37.5rem] w-auto h-auto'>
                     <span>Hi, I Am Kalpesh</span>
-                    <span>A <span className='gradient-text'>Fullstack Developer</span>
+                    <span className='text-nowrap '>A <span className='gradient-text'>Fullstack Developer</span>
                     </span>
                 </motion.div>
                 <motion.div
@@ -52,7 +52,7 @@ export default function index() {
                 </motion.a>
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className='flex items-center justify-start gap-4 mt-5'>
+                    className='flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4 mt-5'>
                     <div className='flex items-center gap-2'>
                         <Image src={phoneIcon} alt='' width={18} height={18} />
                         <span className='text-white'>+91 8857896324</span>
@@ -65,7 +65,7 @@ export default function index() {
             </div>
             <motion.div
                 variants={slideInFromRight(0.8)}
-                className='w-full h-full flex justify-center items-center'>
+                className='w-full h-full sm:flex justify-center items-center hidden'>
                 <Image src={mainIconsdark} alt='' width={650} height={650} />
             </motion.div>
 
