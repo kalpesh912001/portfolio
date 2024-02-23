@@ -1,21 +1,22 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
-import reactLogo from '../../../public/react-logo.png';
 import locationIcon from '../../../public/map-pin.svg';
 import companyBuilding from '../../../public/company-icon.svg';
-
+import Tooltip from 'rc-tooltip';
+import 'rc-tooltip/assets/bootstrap_white.css';
 interface Props {
     designation: string;
     company: string;
     location: string;
     duration: string;
-    technologies: any[]
+    technologies: { name: string, image: string }[]
 }
 
 export default function index(props: Props) {
     const { designation, company, location, duration, technologies } = props;
     return (
-        <div className='w-[30rem] h-auto rounded-xl border flex gap-5 p-5'>
+        <div className='w-[30rem] h-auto rounded-xl border flex gap-5 p-5 z-[20] cursor-pointer'>
             <div className='flex items-start justify-center'>
                 <div className='border p-3 rounded-lg flex justify-center items-center bg-slate-300'>
                     <Image src={companyBuilding} alt='' width={80} height={80} />
@@ -40,11 +41,13 @@ export default function index(props: Props) {
                 </div>
                 <div className='flex items-center gap-2'>
                     {
-                        technologies.map((item, index) => {
+                        technologies.map((tech, index) => {
                             return (
-                                <div key={index} className='p-1 flex items-center justify-center border rounded-lg'>
-                                    <Image src={item} alt="" width={18} height={18} className='max-h-[18px] max-w-[18px]' />
-                                </div>
+                                <Tooltip placement='top' trigger={['hover']} overlay={tech.name}>
+                                    <div key={index} className='p-1 flex items-center justify-center border rounded-lg'>
+                                        <Image src={tech.image} alt="" width={18} height={18} className='max-h-[18px] max-w-[18px]' />
+                                    </div>
+                                </Tooltip>
                             )
                         })
                     }

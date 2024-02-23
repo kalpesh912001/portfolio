@@ -69,11 +69,20 @@ export const Skills = [
 ]
 
 export const developer_tech = [
-    "/next.png","/react.png","/ts.png","/node-js.png","/postgres.png","/docker.webp" 
+    { name : "Next JS", image : "/next.png"},
+    { name : "React JS", image : "/react.png"},
+    { name : "Typescript", image : "/ts.png"},
+    { name : "Node JS", image : "/node-js.png"},
+    { name : "Postgres Sql", image : "/postgres.png"},
+    { name : "Docker", image : "/docker.webp" }
 ]
 
 export const intern_tech = [
-    "/next.png","/react.png","/ts.png","/bootstrap.svg", "/tailwind.png",
+    { name : "Next JS", image : "/next.png"},
+    { name : "React JS", image : "/react.png"},
+    { name : "Typescript", image : "/ts.png"},
+    { name : "Tailwind", image : "/tailwind.png"},
+    { name : "Bootstrap", image : "/bootstrap.svg"},
 ]
 export const Socials = [
     {
