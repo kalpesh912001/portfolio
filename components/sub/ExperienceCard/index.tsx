@@ -16,7 +16,7 @@ interface Props {
 export default function index(props: Props) {
     const { designation, company, location, duration, technologies } = props;
     return (
-        <div className='w-[30rem] h-auto rounded-xl border flex gap-5 p-5 z-[20] cursor-pointer'>
+        <div className='w-[30rem] h-auto rounded-xl border border-[#7042f861] flex gap-5 p-5 z-[20] cursor-pointer zoom-animation'>
             <div className='flex items-start justify-center'>
                 <div className='border p-3 rounded-lg flex justify-center items-center bg-slate-300'>
                     <Image src={companyBuilding} alt='' width={80} height={80} />

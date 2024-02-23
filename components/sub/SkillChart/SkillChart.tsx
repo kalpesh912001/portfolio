@@ -70,7 +70,7 @@ export default function SkillChart(props: Props) {
     return (
         <motion.div
             variants={slideInFromLeft(0.3)}
-            className='flex flex-col items-center justify-start gap-3 !px-[-10px] py-2 rounded-lg shadow-lg cursor-pointer backdrop-blur-14 bg-[#FFFFFF] bg-opacity-10 zoom-animation'>
+            className='flex flex-col items-center justify-start gap-3 !px-[-10px] py-2 rounded-lg shadow-lg cursor-pointer backdrop-blur-sm bg-[#FFFFFF] bg-opacity-10 zoom-animation'>
             <ReactApexChart
                 options={skillData.options as any || {}}
                 series={skillData.series || []}

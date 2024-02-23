@@ -141,7 +141,9 @@ html {
   }
 }
 
-.zoom-animation :hover {
-  zoom: 1.2;
-  transition: 0.3s ease-in-out ;
+.zoom-animation {
+  transition: transform 0.3s;
+}
+.zoom-animation:hover {
+  transform: scale(1.05);
 }
