@@ -73,7 +73,7 @@ export const developer_tech = [
 ]
 
 export const intern_tech = [
-    "/next.png","/react.png","/ts.png","/bootstap.svg", "/tailwing.png",
+    "/next.png","/react.png","/ts.png","/bootstrap.svg", "/tailwind.png",
 ]
 export const Socials = [
     {
