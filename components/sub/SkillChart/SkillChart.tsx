@@ -4,12 +4,14 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeInTop, slideInFromLeft, slideInFromTop } from '@/utils/motion';
+import useScreenWidth from '../../../utils/useScreenWidth';
 interface Props {
     percent: number;
     lable: string;
     image: string;
 }
 export default function SkillChart(props: Props) {
+    const { screenWidth } = useScreenWidth();
     const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
     const { percent, lable, image } = props;
     const [skillData, setSkillData] = useState<any>({
@@ -70,17 +72,17 @@ export default function SkillChart(props: Props) {
     return (
         <motion.div
             variants={slideInFromLeft(0.3)}
-            className='flex flex-col items-center justify-start gap-3 !px-[-10px] py-2 rounded-lg shadow-lg cursor-pointer backdrop-blur-sm bg-[#FFFFFF] bg-opacity-10 zoom-animation'>
+            className='flex flex-col items-center justify-start gap-2 sm:gap-3 !px-[-10px] py-2 rounded-lg shadow-lg cursor-pointer backdrop-blur-sm bg-[#FFFFFF] bg-opacity-10 sm:zoom-animation'>
             <ReactApexChart
                 options={skillData.options as any || {}}
                 series={skillData.series || []}
                 type="radialBar"
-                width={250}
-                height={250}
+                width={screenWidth <= 575 ? 180 : 220}
+                height={screenWidth <= 575 ? 180 : 220}
             />
             <div className='flex items-center justify-center gap-2 mb-4'>
-                <Image src={image} alt='' width={30} height={30} />
-                <span className='text-white text-[1.2rem]'>{lable}</span>
+                <Image src={image} alt='' width={25} height={25} className='w-[25px] h-[25px] sm:w-[30px] sm:h-[30px]' />
+                <span className='text-white text-[1rem] sm:text-[1.2rem]'>{lable}</span>
             </div>
         </motion.div>
     )

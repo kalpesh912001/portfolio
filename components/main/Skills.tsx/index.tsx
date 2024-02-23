@@ -10,7 +10,7 @@ export default function index() {
             className='flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden '
             style={{ transform: "scale(0.9)" }} >
             <SkillText />
-            <div className='flex justify-center flex-wrap mt-4 gap-y-8 gap-x-8 items-center'>
+            <div className='grid grid-cols-3 sm:flex justify-center flex-wrap mt-4 gap-y-4 sm:gap-y-8 gap-x-4 sm:gap-x-8 items-center'>
                 {
                     Skills.map((item, index) => {
                         return (
