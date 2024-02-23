@@ -43,8 +43,8 @@ export default function index(props: Props) {
                     {
                         technologies.map((tech, index) => {
                             return (
-                                <Tooltip placement='top' trigger={['hover']} overlay={tech.name}>
-                                    <div key={index} className='p-1 flex items-center justify-center border rounded-lg'>
+                                <Tooltip placement='top' trigger={['hover']} overlay={tech.name} key={index}>
+                                    <div className='p-1 flex items-center justify-center border rounded-lg'>
                                         <Image src={tech.image} alt="" width={18} height={18} className='max-h-[18px] max-w-[18px]' />
                                     </div>
                                 </Tooltip>
