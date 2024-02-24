@@ -6,9 +6,9 @@ import mail from '../../../public/mail.svg';
 
 export default function index() {
     return (
-        <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
+        <div className="w-full m-auto h-full bg-transparent text-gray-200 shadow-lg ml-[2.8rem] sm:p-[15px]">
             <div className="w-full flex flex-col items-center justify-center m-auto">
-                <div className="w-full h-full flex flex-row items-start justify-around flex-wrap">
+                <div className="w-full h-full flex flex-row items-start justify-around flex-wrap gap-3">
                     {/* <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">Community</div>
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
