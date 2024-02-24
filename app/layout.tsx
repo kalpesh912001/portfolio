@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
+      <meta name="viewport" content="width=1000"></meta>
       <body className={`${inter.className} relative bg-[#030014] scrollbar-hidden overflow-y-scroll overflow-x-hidden`} >
         <StarCanvas />
         <NavBar />
