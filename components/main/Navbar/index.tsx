@@ -28,7 +28,7 @@ export default function Index() {
                         <a href="#projects" className="cursor-pointer">Projects</a>
                     </div>
                 </div>
-                <div className='flex flex-col gap-5 items-center'>
+                <div className='flex flex-col gap-5 items-center relative'>
                     <div className='sm:flex gap-5 hidden'>
                         {
                             Socials.map((social) => {
@@ -54,7 +54,7 @@ export default function Index() {
                         height={30}
                         className={`sm:hidden ${showSocials ? 'rotate-180 duration-300' : 'duration-300'}`}
                         onClick={() => setShowSocials(!showSocials)} />
-                    <div className={`flex flex-col gap-4 sm:hidden ${showSocials ? 'h-full duration-300' : 'h-0 duration-300'}`}>
+                    <div className={`absolute top-[2.3rem] flex flex-col mt-3 gap-4 sm:hidden ${showSocials ? 'right-[0rem] duration-300' : 'right-[-3rem] duration-300'}`}>
                         {
                             Socials.map((social) => {
                                 return (
