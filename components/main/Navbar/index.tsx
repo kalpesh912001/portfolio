@@ -24,8 +24,8 @@ export default function Index() {
                 <div className='w-[35.25rem] h-full flex items-center justify-between'>
                     <div className='w-full h-auto flex items-center justify-between border border-[#7042f861] bg-[#0300145e] px-[1.25rem] py-[0.625rem] rounded-full text-gray-200'>
                         <a href="#about-me" className="cursor-pointer">About me</a>
+                        <a href="#experience" className="cursor-pointer">Experience</a>
                         <a href="#skills" className="cursor-pointer">Skills</a>
-                        <a href="#projects" className="cursor-pointer">Projects</a>
                     </div>
                 </div>
                 <div className='flex flex-col gap-5 items-center relative'>
