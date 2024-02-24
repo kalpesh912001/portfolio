@@ -30,6 +30,7 @@ export default function index() {
                             Socials.map((item, index) => {
                                 return (
                                     <a href={item.link}
+                                        key={index}
                                         target="_blank"
                                         className="flex flex-row items-center my-[15px] cursor-pointer">
                                         <Image src={item.src} alt='' width={16} height={16} />
