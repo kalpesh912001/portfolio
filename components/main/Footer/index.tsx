@@ -53,7 +53,7 @@ export default function index() {
                 </div>
 
                 <div className="mb-[20px] text-[15px] text-center">
-                    &copy; portfolio-lovat-zeta-28 Dev 2024 Inc. All rights reserved
+                    &copy; Next JS Dev 2024 Inc. All rights reserved
                 </div>
             </div>
         </div>
