@@ -19,6 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
       <meta name="viewport" content="width=1000"></meta>
       <body className={`${inter.className} relative bg-[#030014] scrollbar-hidden overflow-y-scroll overflow-x-hidden`} >
         <StarCanvas />
