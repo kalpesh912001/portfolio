@@ -8,7 +8,7 @@ import Experience from '../components/main/Experiance';
 export default function Home() {
   return (
     <main className="w-full h-full">
-      <div className="flex flex-col gap-20 w-fit items-center">
+      <div className="flex flex-col gap-28 w-fit items-center">
         <Dashboard />
         <Experience />
         <Skills />
