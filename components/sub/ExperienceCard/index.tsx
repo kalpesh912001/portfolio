@@ -37,7 +37,7 @@ export default function index(props: Props) {
                 </div>
                 <div className='flex flex-col items-start gap-3'>
                     <span className='text-[1.1rem] text-[#c7c7c7d2]'>{duration}</span>
-                    <span className='text-[1.1rem] text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, officiis!</span>
+                    {/* <span className='text-[1.1rem] text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, officiis!</span> */}
                 </div>
                 <div className='flex items-center gap-2'>
                     {
