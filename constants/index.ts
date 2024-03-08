@@ -105,7 +105,7 @@ export const Socials = [
 export const projectsContent = {
     sunstore: {
         title: 'Sunstore',
-        image: '/sunstore-dashboard.png',
+        image: '/sunstore-dashboard.jpg',
         clientCompany: 'Aerem Finance',
         projectUrl: 'https://sunstore.co/',
         projectPeriod: 'June 2023 - Currently Working',
