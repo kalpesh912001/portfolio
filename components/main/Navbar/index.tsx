@@ -6,12 +6,12 @@ import { Socials } from '../../../constants';
 import downArrow from '../../../public/downArrow.svg';
 
 export default function Index() {
-    const [showSocials, setShowSocials] = useState<boolean>(false); 
+    const [showSocials, setShowSocials] = useState<boolean>(false);
 
     return (
         <div className='w-full h-[4.063rem] fixed top-0 shadow-lg shadow-[#2A0E65]/50 bg-[#03001417] backdrop-blur-md z-50 px-[10px]'>
             <div className='w-full h-full flex justify-between items-center m-auto px-[10px] gap-4'>
-                <a href='#about-me' className='w-auto h-auto flex items-center'>
+                <a href='#about-me' className='w-auto h-auto flex items-center gap-2'>
                     <Image
                         alt='logo'
                         src={Navlogo1}

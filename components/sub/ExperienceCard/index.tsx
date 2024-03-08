@@ -18,8 +18,8 @@ export default function index(props: Props) {
     return (
         <div className='w-full sm:w-[30rem] h-auto rounded-xl border border-[#7042f861] flex flex-col sm:flex-row gap-5 p-5 z-[20] cursor-pointer sm:zoom-animation'>
             <div className='flex items-start justify-start sm:justify-center'>
-                <div className='border p-3 rounded-lg flex justify-center items-center bg-slate-300'>
-                    <Image src={companyBuilding} alt='' width={80} height={80} />
+                <div className=' flex justify-center items-center'>
+                    <Image src={'/rbis-logo1.png'} alt='' width={100} height={100} className='border rounded-lg' />
                 </div>
             </div>
 
