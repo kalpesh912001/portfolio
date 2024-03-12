@@ -11,7 +11,7 @@ export default function Index() {
     return (
         <div className='w-full h-[4.063rem] fixed top-0 shadow-lg shadow-[#2A0E65]/50 bg-[#03001417] backdrop-blur-md z-50 px-[10px]'>
             <div className='w-full h-full flex justify-between items-center m-auto px-[10px] gap-4'>
-                <a href='#about-me' className='w-auto h-auto flex items-center gap-2'>
+                <a href='#dashboard' className='w-auto h-auto flex items-center gap-2'>
                     <Image
                         alt='logo'
                         src={Navlogo1}
@@ -23,9 +23,9 @@ export default function Index() {
                 </a>
                 <div className='w-[35.25rem] h-full flex items-center justify-between'>
                     <div className='w-full h-auto flex items-center justify-between border border-[#7042f861] bg-[#0300145e] px-[1.25rem] py-[0.625rem] rounded-full text-gray-200'>
-                        <a href="#about-me" className="cursor-pointer">About me</a>
                         <a href="#experience" className="cursor-pointer">Experience</a>
                         <a href="#skills" className="cursor-pointer">Skills</a>
+                        <a href="#projects" className="cursor-pointer">Projects</a>
                     </div>
                 </div>
                 <div className='flex flex-col gap-5 items-center relative'>

@@ -4,7 +4,7 @@ import DashboardConent from '../../sub/DashboardContent';
 export default function Index() {
     return (
         <div
-            id='about-me'
+            id='dashboard'
             className='relative flex flex-col h-full w-full justify-between'>
             <video
                 autoPlay
