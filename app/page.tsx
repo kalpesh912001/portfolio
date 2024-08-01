@@ -12,7 +12,6 @@ export default function Home() {
         <Dashboard />
         <Experience />
         <Skills />
-        {/* <Encryption /> */}
         <Projects />
       </div>
     </main>
