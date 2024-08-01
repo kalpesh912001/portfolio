@@ -54,7 +54,7 @@ export default function index() {
                     className='flex flex-col sm:flex-row items-start sm:items-center justify-start gap-4 mt-5'>
                     <div className='flex items-center gap-2'>
                         <Image src={phoneIcon} alt='' width={18} height={18} />
-                        <span className='text-white'>+91 8857896324</span>
+                        <a href="tel:8857896324" className='text-white'>+91 8857896324</a>
                     </div>
                     <div className='flex items-center gap-2'>
                         <Image src={mail} alt='' width={18} height={18} />

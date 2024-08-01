@@ -44,7 +44,7 @@ export default function index() {
                         <div className="font-bold text-[16px]">Contact</div>
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
                             <Image src={phoneLogo} alt='' width={16} height={16} />
-                            <span className="text-[15px] ml-[6px]">+91 8857896324</span>
+                            <a href="tel:8857896324" className="text-[15px] ml-[6px]">+91 8857896324</a>
                         </p>
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
                             <Image src={mail} alt='' width={16} height={16} />
