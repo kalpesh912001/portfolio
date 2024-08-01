@@ -1,7 +1,7 @@
 
 export const Skills = [
     {
-        skill_name: "Next js 13",
+        skill_name: "Next js 14",
         Image: "/next.png",
         percent: 91
     },
@@ -103,6 +103,18 @@ export const Socials = [
 ];
 
 export const projectsContent = {
+    aeroc: {
+        title: 'Aeroc',
+        image: '/aeroc-logo.png',
+        clientCompany: 'Aerem Finance',
+        projectPeriod: 'April 2024 - June 2024',
+        technologies: ['Next JS', 'Typescript', 'Redux Saga', 'Node JS', 'PostgresSql', 'HTML', 'Tailwind'],
+        description: `Built by Aerem, Aeroc is a monitoring device designed for organizations to onboard superadmins, 
+                      installers, platform admins, and customers. Supports the addition and real-time monitoring of 
+                      thousands of solar plants, providing detailed statistics and access to historical data for comprehensive 
+                      analysis.`
+    },
+
     sunstore: {
         title: 'Sunstore',
         image: '/sunstore-dashboard.jpg',
@@ -122,8 +134,8 @@ export const projectsContent = {
         clientCompany: 'Aerem Finance',
         projectPeriod: 'March 2023 - Currently Working',
         technologies: ['Next JS', 'Typescript', 'Node JS', 'PostgresSql', 'HTML', 'Bootstrap'],
-        description: `Aerem’s Aggregator platform serves as a dedicated internal platform, fostering 
+        description: `Aerem's Aggregator platform serves as a dedicated internal platform, fostering 
                         streamlined solar product trade interactions between sellers and buyers, particularly 
-                        with Aerem’s Sunstore application.`
+                        with Aerem's Sunstore application.`
     }
 }
