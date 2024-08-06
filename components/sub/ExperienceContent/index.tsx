@@ -11,7 +11,7 @@ export default function index() {
             <div className='w-full grid grid-cols-1 sm:grid-cols-2 justify-start sm:gap-5'>
                 <div className='flex items-start gap-5 justify-end sm:mr-[-1.25rem]'>
                     <ExperienceCard
-                        designation='Softwere Developer'
+                        designation='Software Developer'
                         company='RBIS Technologies PVT LTD'
                         location='Pune, Maharashtra, India'
                         duration='July 2023 - Present Day'
@@ -34,7 +34,7 @@ export default function index() {
                         <div className='w-[1px] h-[9.6rem] bg-slate-700'></div>
                     </div>
                     <ExperienceCard
-                        designation='Softwere Developer Intern'
+                        designation='Software Developer Intern'
                         company='RBIS Technologies PVT LTD'
                         location='Pune, Maharashtra, India'
                         duration='January 2023 - June 2023'
