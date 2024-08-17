@@ -108,7 +108,7 @@ export const projectsContent = {
         image: '/aeroc-logo.png',
         clientCompany: 'Aerem Finance',
         projectPeriod: 'April 2024 - June 2024',
-        technologies: ['Next JS', 'Typescript', 'Redux Saga', 'Node JS', 'PostgresSql', 'HTML', 'Tailwind'],
+        technologies: ['Next JS', 'Typescript', 'Redux Saga', 'Node JS', 'Express JS', 'PostgresSql', 'HTML', 'Tailwind'],
         description: `Built by Aerem, Aeroc is a monitoring device designed for organizations to onboard superadmins, 
                       installers, platform admins, and customers. Supports the addition and real-time monitoring of 
                       thousands of solar plants, providing detailed statistics and access to historical data for comprehensive 
@@ -121,7 +121,7 @@ export const projectsContent = {
         clientCompany: 'Aerem Finance',
         projectUrl: 'https://sunstore.co/',
         projectPeriod: 'June 2023 - Currently Working',
-        technologies: ['Next JS', 'Typescript', 'Node JS', 'PostgresSql', 'HTML', 'Tailwind'],
+        technologies: ['Next JS', 'Typescript', 'Node JS', 'Express JS', 'PostgresSql', 'HTML', 'Tailwind'],
         description: `Developed by Aerem Finance, Aerem's Sunstore stands as a testament 
                         to innovation, offering solar product buyers a userfriendly platform. 
                         Notably, the website boasts an extensive catalog featuring over 50+ 
@@ -133,7 +133,7 @@ export const projectsContent = {
         image: '/aerem-logo.png',
         clientCompany: 'Aerem Finance',
         projectPeriod: 'March 2023 - Currently Working',
-        technologies: ['Next JS', 'Typescript', 'Node JS', 'PostgresSql', 'HTML', 'Bootstrap'],
+        technologies: ['React JS', 'Typescript', 'Node JS', 'Express JS', 'PostgresSql', 'HTML', 'Bootstrap'],
         description: `Aerem's Aggregator platform serves as a dedicated internal platform, fostering 
                         streamlined solar product trade interactions between sellers and buyers, particularly 
                         with Aerem's Sunstore application.`
