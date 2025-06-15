@@ -68,7 +68,16 @@ export const Skills = [
     }
 ]
 
-export const developer_tech = [
+export const neosoftTech = [
+    { name: "Next JS", image: "/next.png" },
+    { name: "React JS", image: "/react.png" },
+    { name: "Typescript", image: "/ts.png" },
+    { name: "Tailwind", image: "/tailwind.png" },
+    { name: "Graphql", image: "/graphql.png" },
+
+]
+
+export const rbisTech = [
     { name: "Next JS", image: "/next.png" },
     { name: "React JS", image: "/react.png" },
     { name: "Typescript", image: "/ts.png" },
@@ -103,6 +112,17 @@ export const Socials = [
 ];
 
 export const projectsContent = {
+    crickbuzz11: {
+        title: 'Aeroc',
+        image: '/Cricbuzz11.png',
+        clientCompany: 'Dream11',
+        projectUrl: 'https://play.google.com/store/apps/details?id=in.tricket.tricketApp',
+        projectPeriod: 'January 2025 - Present',
+        technologies: ['Next JS', 'Typescript', 'Redux', 'GraphQL', 'HTML', 'Tailwind'],
+        description: `Built by Dream11 in collaboration with Sportz Interactive, Cricbuzz11 is a fantasy cricket Progressive Web App 
+        designed to deliver a seamless and engaging user experience. The platform allows users to create fantasy teams, 
+        track live match updates, and participate in contests. With over 50 lakh downloads on the Play Store and a 4.2-star rating.`
+    },
     aeroc: {
         title: 'Aeroc',
         image: '/aeroc-logo.png',

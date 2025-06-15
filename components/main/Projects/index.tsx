@@ -12,6 +12,9 @@ export default function index() {
             </h1>
             <div className='h-full w-full flex flex-col gap-[3rem] px-[0.625rem]'>
                 <ProjectCard
+                    projectData={projectsContent.crickbuzz11}
+                />
+                <ProjectCard
                     projectData={projectsContent.aeroc}
                 />
                 <ProjectCard

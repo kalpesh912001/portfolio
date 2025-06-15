@@ -11,7 +11,7 @@ import mail from '../../../public/mail.svg';
 export default function index() {
 
     const openResume = () => {
-        window.open('/KalpeshPatilResume.pdf', '_blank')
+        window.open('/Kalpesh-NextJs-Developer.pdf', '_blank')
     }
     return (
         <motion.div
@@ -20,15 +20,6 @@ export default function index() {
             className='flex mx-auto flex-row items-center justify-center px-6 sm:px-20 mt-[17rem] sm:mt-32 w-full z-[20]'
         >
             <div className='h-full mx-auto w-full flex flex-col gap-5 justify-center text-start'>
-                {/* <motion.div
-                    variants={slideInFromTop}
-                    className='Welcome-
-                    box py-[0.9rem] px-[8px] border border-[#7042f88b] opacity-[0.9] max-w-[12rem]'>
-                    <SparklesIcon className='text-[#b49bff] mr-[0.625rem] h-5 w-5' />
-                    <h1 className='Welcome-text1 text-[0.813rem]'>
-                        Hello world
-                    </h1>
-                </motion.div> */}
                 <motion.div
                     variants={slideInFromLeft(0.5)}
                     className=' flex flex-col gap-3 mt-6 text-[2.5rem] font-bold text-white max-w-[37.5rem] w-auto h-auto'>

@@ -11,15 +11,16 @@ interface Props {
     location: string;
     duration: string;
     technologies: { name: string, image: string }[]
+    companyLogo: string
 }
 
 export default function index(props: Props) {
-    const { designation, company, location, duration, technologies } = props;
+    const { designation, company, location, duration, technologies, companyLogo } = props;
     return (
         <div className='w-full sm:w-[30rem] h-auto rounded-xl border border-[#7042f861] flex flex-col sm:flex-row gap-5 p-5 z-[20] cursor-pointer sm:zoom-animation'>
             <div className='flex items-start justify-start sm:justify-center'>
                 <div className=' flex justify-center items-center'>
-                    <Image src={'/rbis-logo1.png'} alt='' width={100} height={100} className='border rounded-lg' />
+                    <Image src={companyLogo} alt='' width={100} height={100} className='border rounded-lg' />
                 </div>
             </div>
 
