@@ -113,7 +113,7 @@ export const Socials = [
 
 export const projectsContent = {
     crickbuzz11: {
-        title: 'Aeroc',
+        title: 'Cricbuzz11',
         image: '/Cricbuzz11.png',
         clientCompany: 'Dream11',
         projectUrl: 'https://play.google.com/store/apps/details?id=in.tricket.tricketApp',
