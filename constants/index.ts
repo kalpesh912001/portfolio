@@ -117,7 +117,7 @@ export const projectsContent = {
         image: '/Cricbuzz11.png',
         clientCompany: 'Dream11',
         projectUrl: 'https://play.google.com/store/apps/details?id=in.tricket.tricketApp',
-        projectPeriod: 'January 2025 - Present',
+        projectPeriod: 'January 2025 - July 2025',
         technologies: ['Next JS', 'Typescript', 'Redux', 'GraphQL', 'HTML', 'Tailwind'],
         description: `Built by Dream11 in collaboration with Sportz Interactive, Cricbuzz11 is a fantasy cricket Progressive Web App 
         designed to deliver a seamless and engaging user experience. The platform allows users to create fantasy teams, 
@@ -140,7 +140,7 @@ export const projectsContent = {
         image: '/sunstore.png',
         clientCompany: 'Aerem Finance',
         projectUrl: 'https://sunstore.co/',
-        projectPeriod: 'June 2023 - Currently Working',
+        projectPeriod: 'June 2023 - January 2024',
         technologies: ['Next JS', 'Typescript', 'Node JS', 'Express JS', 'PostgresSql', 'HTML', 'Tailwind'],
         description: `Developed by Aerem Finance, Aerem's Sunstore stands as a testament 
                         to innovation, offering solar product buyers a userfriendly platform. 
@@ -152,7 +152,7 @@ export const projectsContent = {
         title: 'Aggregator Platform',
         image: '/aerem-logo.png',
         clientCompany: 'Aerem Finance',
-        projectPeriod: 'March 2023 - Currently Working',
+        projectPeriod: 'March 2023 - January 2024',
         technologies: ['React JS', 'Typescript', 'Node JS', 'Express JS', 'PostgresSql', 'HTML', 'Bootstrap'],
         description: `Aerem's Aggregator platform serves as a dedicated internal platform, fostering 
                         streamlined solar product trade interactions between sellers and buyers, particularly 
