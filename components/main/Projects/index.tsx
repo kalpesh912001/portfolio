@@ -11,17 +11,12 @@ export default function index() {
                 Projects
             </h1>
             <div className='h-full w-full flex flex-col gap-[3rem] px-[0.625rem]'>
-                <ProjectCard
-                    projectData={projectsContent.crickbuzz11}
-                />
-                <ProjectCard
-                    projectData={projectsContent.aeroc}
-                />
-                <ProjectCard
-                    projectData={projectsContent.sunstore}
-                />
-                <ProjectCard
-                    projectData={projectsContent.aggregator} />
+                {projectsContent.map((project) => (
+                    <ProjectCard
+                        key={project.id}
+                        projectData={project}
+                    />
+                ))}
             </div>
         </div>
     )

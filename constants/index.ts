@@ -111,8 +111,30 @@ export const Socials = [
     },
 ];
 
-export const projectsContent = {
-    crickbuzz11: {
+export const projectsContent = [
+    {
+        id: 'axisMutualFund',
+        title: 'Axis Mutual Fund',
+        image: '/axis-logo.png',
+        clientCompany: 'Axis',
+        projectPeriod: 'August 2025 - Present',
+        technologies: [
+            'React JS',
+            'Next JS',
+            'Typescript',
+            'Micro-Frontend',
+            'Redux Toolkit',
+            'HTML',
+            'Tailwind'
+        ],
+        description: `Axis Mutual Fund is an enterprise-grade financial web platform built using a micro-frontend architecture,
+        where multiple independent React modules are integrated into a Next.js host application. The platform includes key
+        modules such as Homepage, Schemes, and Service Center, enabling users to explore mutual fund offerings and access
+        investor services. I collaborated closely with designers, frontend teams, and middleware teams to develop scalable
+        frontend features and integrate APIs for seamless data flow and user experience.`
+    },
+    {
+        id: 'crickbuzz11',
         title: 'Cricbuzz11',
         image: '/Cricbuzz11.png',
         clientCompany: 'Dream11',
@@ -123,7 +145,8 @@ export const projectsContent = {
         designed to deliver a seamless and engaging user experience. The platform allows users to create fantasy teams, 
         track live match updates, and participate in contests. With over 50 lakh downloads on the Play Store and a 4.2-star rating.`
     },
-    aeroc: {
+    {
+        id: 'aeroc',
         title: 'Aeroc',
         image: '/aeroc-logo.png',
         clientCompany: 'Aerem Finance',
@@ -135,7 +158,8 @@ export const projectsContent = {
                       analysis.`
     },
 
-    sunstore: {
+    {
+        id: 'sunstore',
         title: 'Sunstore',
         image: '/sunstore.png',
         clientCompany: 'Aerem Finance',
@@ -148,7 +172,8 @@ export const projectsContent = {
                         products, contributing to a substantial increase in user satisfaction`
     },
 
-    aggregator: {
+    {
+        id: 'aggregator',
         title: 'Aggregator Platform',
         image: '/aerem-logo.png',
         clientCompany: 'Aerem Finance',
@@ -158,4 +183,4 @@ export const projectsContent = {
                         streamlined solar product trade interactions between sellers and buyers, particularly 
                         with Aerem's Sunstore application.`
     }
-}
+]
