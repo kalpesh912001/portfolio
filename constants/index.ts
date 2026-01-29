@@ -123,9 +123,10 @@ export const projectsContent = [
             'Next JS',
             'Typescript',
             'Micro-Frontend',
+            'Microservices',
             'Redux Toolkit',
             'HTML',
-            'Tailwind'
+            'CSS'
         ],
         description: `Axis Mutual Fund is an enterprise-grade financial web platform built using a micro-frontend architecture,
         where multiple independent React modules are integrated into a Next.js host application. The platform includes key
